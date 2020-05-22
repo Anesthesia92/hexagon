@@ -1,0 +1,341 @@
+$grey: #949494
+$blue: #56c7ff
+$wg: #f5f4f4
+$db: #36aeea
+.header
+  background: url("../images/макет.png")
+  height: 698px
+  z-index: -100
+  &_topBackground
+    background: rgba(255,255,255,0.4)
+    height: 90px
+  &_topPadding
+    padding-top: 15px
+  &_logo
+    font-size: 29px
+    font-family: Bringin
+    &_moun
+     color: $blue
+    &_tain
+     color: $grey
+  &_nav
+    padding-right: 10px
+    &_link
+     color: $grey
+     font-size: 12px
+     font-weight: bold
+     font-family: OpenSans
+     padding: .6rem
+  &_button
+   color: $blue
+   font-size: 12px
+   font-weight: bold
+   font-family: raleway
+   border: 3px solid $blue
+   padding: 12px 45px
+
+.header_body
+  font-size: 50px
+  Margin-top: 160px
+  height: 300px
+  border: 3px solid white
+  &_travel
+   color: white
+   font-family: Opensansbold
+   position: absolute
+   letter-spacing: 4px
+   box-sizing: border-box
+.Mountains
+ color: $blue
+ font-family: Bringin
+ position: absolute
+ top: 28px
+ font-size: 66px
+ width: auto
+ box-sizing: border-box
+.Lorem
+ color: #dee0e3
+ font-size: 18px
+ margin-top: 110px
+ position: absolute
+ height: 40px
+ width: auto
+.header_body_Lorem p
+ margin-block-start: 0
+ margin-block-end: 0
+ width: auto
+.button_ordernow
+  position: absolute
+  margin-top: 200px
+  margin-left: 20px
+  padding: 19px 65px
+  font-size: 13px
+  font-family: RalewayBold
+  letter-spacing: 3px
+  background: rgba(86, 199, 255, 0.8)
+  border: 1px solid $blue
+
+.header_button:hover, .button_ordernow:hover, .button_readmore:hover, .buttonblock4:hover
+  @extend %message-shared
+.header_nav_link:hover
+  color: $grey
+  border-bottom: 2px solid $blue
+.aboutus
+  height: 667px
+  background-color: $wg
+  width: auto
+  &_body1
+    height: 667px
+    background: url("../images/Vector.png") no-repeat bottom 110px left 100px
+  &_body1_writeabout
+    font-family: Opensansbold
+    font-size: 20px
+    Padding-top: 258px
+    position: absolute
+  &_body1_text
+   font-size: 14px
+   color: $grey
+   top: 299px
+   position: absolute
+   font-family: OpenSans
+  &_body2
+   z-index: 1
+   position: absolute
+   right: 110px
+   top: -43px
+.aboutus_body2
+  position: relative
+.legs
+  position: absolute
+  z-index: 2
+  right: 300px
+  bottom: 10px
+
+.button_readmore
+  font-size: 12px
+  background-color: $blue
+  border: 3px solid $blue
+  padding: 10px 28px
+  font-family: Opensansbold
+  z-index: 100
+  position: relative
+  top: 161px
+.zigzag
+  margin-top: 207px
+.block_3
+  height: 1065px
+.outjornal
+  height: 218px
+  background-color: white
+  &_text_1
+  font-size: 30px
+  font-family: Opensansbold
+  text-align: center
+  &_text2
+  padding-top: 70px
+.outjornal_zigzag2 img
+ box-sizing: content-box
+ margin-bottom: 30px
+.lovetext
+  padding-top: 40px
+  text-align: center
+  &_1
+   color: $blue
+   font-family: Opensansbold
+   font-size: 11px
+  &_2
+   font-family: Opensansbold
+   font-size: 16px
+  &_3
+   @extend %shared-block
+  &_4
+   @extend %shared-block-1
+   padding-top: 15px
+.loveimage1
+  background: url("../images/ImageBackground1.png") no-repeat
+  position: relative
+.triangle1
+  border-top: 10px solid transparent
+  border-right: 10px solid #f2faff
+  border-bottom: 10px solid transparent
+  position: absolute
+  top: 50px
+  left: 370px
+.triangle2
+  border-left: 10px solid transparent
+  border-right: 10px solid transparent
+  border-bottom: 10px solid #f2faff
+  position: absolute
+  left: 50px
+  top: 369px
+.triangle3
+  border-style: solid
+  border-width: 12px 0 12px 8px
+  border-color: transparent transparent transparent #f2faff
+  position: absolute
+  top: 50px
+  left: 0
+.centerlove, .centerlove2, .centernature
+  height: 379px
+.loveimage2
+  background: url("../images/Layer49.png") no-repeat
+  position: relative
+.nature_image
+ background: url("../images/9127271170_42c133847e_z.png") no-repeat
+.treetext, .watertext
+  padding-top: 49px
+  text-align: center
+  color: #108bb8
+  font-family: Opensansbold
+  font-size: 11px
+  &_1, &_4
+   font-family: Opensansbold
+   font-size: 16px
+   margin-top: 40px
+   text-align: center
+  &_1_line
+    text-decoration: line-through
+  &_2, &_5
+   @extend %shared-block
+  &_3, &_6
+   @extend %shared-block-1
+.block_4
+  height: 651px
+  background: url("../images/Layer10.png")
+.go_zigzag
+  padding-top: 149px
+.wanna_go_1
+  padding-top: 25px
+  font-family: Opensansbold
+  font-size: 15px
+.wanna_go_2
+  color: $grey
+.form1, .form2
+ border: white 1px solid
+ padding: 25px
+.borderform
+ height: 30px
+ margin: auto
+ border: 1px solid #cacaca
+.buttonblock4
+ padding: 0 45px
+ background-color: $db
+ border: 2px solid white
+ font-size: 16px
+ font-family: Opensansbold
+.Locktext
+ font-family: OpenSans
+ color: $db
+ vertical-align: baseline
+.spruce
+ margin-top: 237px
+ position: relative
+.spruce_2
+ position: absolute
+ top: -208px
+ left: 149px
+.block_51
+  height: 737px
+.zigzagx
+  padding-top: 60px
+  margin: 0 auto
+  margin-left: 50px
+.zigzagx img
+  padding-left: 80px
+  width: auto
+.howwe
+  font-family: Opensansbold
+  font-size: 30px
+  padding-top: 20px
+.numbers
+  padding-top: 50px
+.circle1, .circle2, .circle3, .circle4
+  @extend %shared-сircle
+
+.numbers_1, .numbers_2, .numbers_3, .numbers_4
+  height: 114px
+  position: relative
+.linegradient1, .linegradient2, .linegradient3
+  @extend %shared-linegradient
+
+.vertical1, .vertical2, .vertical3, .vertical4
+  @extend %shared-linegradientvertical
+
+.hex_round1, .hex_round2, .hex_round3, .hex_round4
+  border-radius: 50%
+  width: 180px
+  height: 180px
+  background:  #f0f3f6
+  border: #f0f3f6
+  margin-left: 34px
+
+
+
+
+%shared-linegradientvertical
+  height: 70px
+  background-image: linear-gradient(99deg, $wg, $wg 90%, transparent 90%, transparent 100%)
+  background-size: 30px 3px
+  border: none
+  position: absolute
+  width: 2px
+  z-index: 100
+  top: 46px
+  left: 142px
+%shared-linegradient
+  height: 2px
+  background-image: linear-gradient(99deg, $wg, $wg 90%, transparent 90%, transparent 100%)
+  background-size: 30px 3px
+  border: none
+  position: absolute
+  width: 242px
+  top: 22px
+  left: 165px
+
+%shared-сircle
+  background: #ffffff
+  padding: 20px
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 50%
+  width: 20px
+  height: 20px
+  max-width: 20px
+  max-height: 20px
+  border:  2px solid $db
+  color: $db
+  font-family: Opensansbold
+  margin: 0 auto
+%shared-block
+  font-family: OpenSans
+  font-size: 14px
+  color: $grey
+  text-align: center
+%shared-block-1
+  font-family: "Times New Roman"
+  font-size: 14px
+  font-style: oblique
+  text-align: center
+%message-shared
+  background-color: rgb(242, 250, 255, 0.5)
+  box-shadow: inset 0 0 0 2px $blue
+  border-color: $blue
+@font-face
+ font-family: "Bringin"
+ src: url(../font/Bringin.otf)
+@font-face
+ font-family: "OpenSans"
+ src: url(../font/OpenSans.ttf)
+@font-face
+ font-family: "Opensansbold"
+ src: url(../font/Opensansbold.ttf)
+@font-face
+ font-family: "raleway"
+ src: url(../font/raleway.ttf)
+@font-face
+  font-family: "RalewayBold"
+  src: url(../font/RalewayBold.ttf)
+
+
+
