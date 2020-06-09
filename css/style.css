@@ -1,4 +1,13 @@
 @charset "UTF-8";
+.media {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.media > * {
+  flex: 1 1 250px;
+}
+
 .header {
   background: url("../images/макет.jpg") no-repeat 50%;
   height: 698px;
@@ -118,37 +127,33 @@
 }
 .aboutus_body1 {
   height: 667px;
-  background: url("../images/Vector.png") no-repeat bottom 110px left 100px;
 }
 .aboutus_body1_writeabout {
   font-family: Opensansbold;
   font-size: 20px;
-  Padding-top: 258px;
-  position: absolute;
+  margin-top: 261px;
 }
 .aboutus_body1_text {
   font-size: 14px;
   color: #bababa;
-  top: 299px;
-  position: absolute;
   font-family: OpenSans;
+  margin-top: 84px;
 }
-.aboutus_body2 {
-  z-index: 1;
+.aboutus_body2 img {
   position: absolute;
-  right: 110px;
-  top: -43px;
+  top: -32px;
+  right: -198px;
 }
 
-.aboutus_body2 {
-  position: relative;
+.block_2 {
+  background: url("../images/Vector.png") no-repeat;
 }
 
 .legs {
-  position: absolute;
-  z-index: 2;
-  right: 300px;
-  bottom: 10px;
+  margin-left: 35px;
+  margin-top: 270px;
+  z-index: 1;
+  position: relative;
 }
 
 .button_readmore {
@@ -159,11 +164,11 @@
   font-family: Opensansbold;
   z-index: 100;
   position: relative;
-  top: 161px;
+  top: 11px;
 }
 
 .zigzag {
-  margin-top: 207px;
+  margin-top: -106px;
 }
 
 .block_3 {
