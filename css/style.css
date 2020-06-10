@@ -1,13 +1,14 @@
 @charset "UTF-8";
-.media {
-  display: flex;
-  flex-wrap: wrap;
+@media (max-width: 768px) {
+  .header_nav_link {
+    font-size: calc(12px + 2 * ((100vw - 360px) / 768));
+  }
 }
-
-.media > * {
-  flex: 1 1 250px;
+@media (min-width: 769px) and (max-width: 2048px) {
+  .header_nav_link {
+    font-size: calc(12px + 3 * ((100vw - 769px) / 2048));
+  }
 }
-
 .header {
   background: url("../images/макет.jpg") no-repeat 50%;
   height: 698px;
@@ -30,11 +31,9 @@
   color: #bababa;
 }
 .header_nav {
-  padding-right: 10px;
-}
-.header_nav_link {
+  z-index: 2;
+  position: relative;
   color: #bababa;
-  font-size: 12px;
   font-weight: bold;
   font-family: OpenSans;
   padding: 0.6rem;
@@ -46,6 +45,8 @@
   font-family: raleway;
   border: 3px solid #56c7ff;
   padding: 12px 45px;
+  z-index: 2;
+  position: relative;
 }
 
 .man {

@@ -2,18 +2,20 @@ $grey: #bababa
 $blue: #56c7ff
 $wg: #f5f4f4
 $db: #36aeea
-.media
-  display: flex
-  flex-wrap: wrap
 
 
-.media > *
-  flex: 1 1 250px
+
+@media (max-width: 768px)
+  .header_nav_link
+    font-size: calc(12px + 2 * ((100vw - 360px) / 768))
+
+@media (min-width: 769px) and (max-width: 2048px)
+  .header_nav_link
+    font-size: calc(12px + 3 * ((100vw - 769px) / 2048))
 
 .header
   background: url("../images/макет.jpg") no-repeat 50%
   height: 698px
-
   &_topBackground
     background: rgba(255,255,255,0.4)
     height: 90px
@@ -27,13 +29,13 @@ $db: #36aeea
     &_tain
      color: $grey
   &_nav
-    padding-right: 10px
+    z-index: 2
+    position: relative
     &_link
-     color: $grey
-     font-size: 12px
-     font-weight: bold
-     font-family: OpenSans
-     padding: .6rem
+    color: $grey
+    font-weight: bold
+    font-family: OpenSans
+    padding: .6rem
   &_button
    color: $blue
    font-size: 12px
@@ -41,6 +43,10 @@ $db: #36aeea
    font-family: raleway
    border: 3px solid $blue
    padding: 12px 45px
+   z-index: 2
+   position: relative
+
+
 .man
   position: relative
   top: -140px
@@ -471,6 +477,7 @@ $db: #36aeea
   margin-top: 30px
 .block_9_1
   margin-top: 80px
+
 .block_9_lorem
   line-height: 2
   color: $grey
