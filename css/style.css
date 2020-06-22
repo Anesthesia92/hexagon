@@ -185,11 +185,30 @@
   font-size: 20px;
   margin-top: 261px;
 }
+@media (max-width: 600px) {
+  .aboutus_body1_writeabout {
+    position: absolute;
+    left: 115px;
+    width: 127px;
+    font-size: 25px;
+  }
+}
 .aboutus_body1_text {
   font-size: 14px;
   color: #bababa;
   font-family: OpenSans;
   margin-top: 84px;
+}
+@media (max-width: 600px) {
+  .aboutus_body1_text {
+    position: absolute;
+    top: 232px;
+    left: 52px;
+    text-align: center;
+    width: 256px;
+    font-size: 18px;
+    color: #a9a8a8;
+  }
 }
 .aboutus_body2 img {
   position: absolute;
@@ -197,9 +216,20 @@
   right: -198px;
 }
 
-@media (max-width: 905px) {
-  .aboutus_body2 {
+@media (max-width: 1078px) {
+  .aboutus_body2 img {
     display: none;
+  }
+}
+.aboutus_mini img {
+  display: none;
+  position: absolute;
+}
+
+@media (min-width: 769px) and (max-width: 1078px) {
+  .aboutus_mini img {
+    display: inline-block;
+    right: 8px;
   }
 }
 @media (max-width: 600px) {
@@ -210,7 +240,7 @@
 .legsmini {
   position: absolute;
   display: none;
-  margin: 6% 17%;
+  margin: 6% 20%;
 }
 
 @media (max-width: 600px) {
@@ -228,7 +258,7 @@
   z-index: 1;
   position: relative;
 }
-@media (min-width: 600px) and (max-width: 769px) {
+@media (min-width: 600px) and (max-width: 992px) {
   .legs {
     right: 24px;
     top: -75px;
@@ -244,6 +274,13 @@
   z-index: 100;
   position: relative;
   top: 11px;
+}
+@media (max-width: 600px) {
+  .button_readmore {
+    top: 517px;
+    left: 95px;
+    width: 143px;
+  }
 }
 
 .zigzag_block2 {
@@ -270,8 +307,13 @@
   text-align: center;
 }
 .outjornal_zigzag2 img {
-  box-sizing: content-box;
   margin-bottom: 30px;
+  margin-left: 37%;
+}
+@media (max-width: 600px) {
+  .outjornal_zigzag2 img {
+    display: none;
+  }
 }
 
 .lovetext {
@@ -293,6 +335,7 @@
 
 .loveimage1 {
   background: url("../images/ImageBackground1.png") no-repeat;
+  background-size: contain;
   position: relative;
 }
 
@@ -329,11 +372,13 @@
 
 .loveimage2 {
   background: url("../images/Layer49.png") no-repeat;
+  background-size: contain;
   position: relative;
 }
 
 .nature_image {
   background: url("../images/9127271170_42c133847e_z.png") no-repeat;
+  background-size: contain;
 }
 
 .treetext, .watertext {
@@ -353,29 +398,91 @@
   text-decoration: line-through;
 }
 .block_4 {
-  height: 651px;
   background: url("../images/Layer10.png") no-repeat center;
+  width: 100%;
 }
 
 .go_zigzag {
   padding-top: 149px;
 }
+@media (max-width: 600px) {
+  .go_zigzag {
+    display: none;
+  }
+}
 
+@media (max-width: 600px) {
+  .wanna_go {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 600px) {
+  .spruce {
+    display: none;
+  }
+}
 .wanna_go_1 {
   padding-top: 25px;
   font-family: Opensansbold;
   font-size: 15px;
 }
+@media (max-width: 600px) {
+  .wanna_go_1 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
 
 .wanna_go_2 {
   color: #bababa;
 }
+@media (max-width: 600px) {
+  .wanna_go_2 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
 
+@media (min-width: 450px) and (max-width: 700px) {
+  .tree, .water {
+    top: -260px;
+  }
+}
+@media (min-width: 350px) and (max-width: 450px) {
+  .tree, .water {
+    top: -415px;
+  }
+}
+@media (max-width: 350px) {
+  .tree, .water {
+    top: -573px;
+  }
+}
+@media (max-width: 600px) {
+  .block_4_flex {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .borderform {
+    display: none;
+  }
+}
 .form1, .form2 {
   border: white 1px solid;
   padding: 25px;
 }
+@media (max-width: 600px) {
+  .form1, .form2 {
+    padding: 13px;
+  }
+}
 
+@media (max-width: 600px) {
+  .form2 {
+    margin-top: 20px;
+  }
+}
 .borderform {
   height: 30px;
   margin: auto;
@@ -388,6 +495,12 @@
   border: 2px solid white;
   font-size: 16px;
   font-family: Opensansbold;
+}
+@media (max-width: 600px) {
+  .buttonblock4 {
+    margin-top: 25px;
+    padding: 16px 45px;
+  }
 }
 
 .Locktext {
@@ -405,6 +518,11 @@
   position: absolute;
   top: -208px;
   left: 149px;
+}
+@media (max-width: 992px) {
+  .spruce_2 {
+    display: none;
+  }
 }
 
 .block_51 {

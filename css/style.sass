@@ -76,8 +76,6 @@ $db: #36aeea
     @media (max-width: 905px)
      display: none
 
-
-
   &_travel
    color: white
    font-family: Opensansbold
@@ -155,27 +153,48 @@ $db: #36aeea
 .aboutus
   height: 667px
   background-color: $wg
-
   &_body1
     height: 667px
   &_body1_writeabout
     font-family: Opensansbold
     font-size: 20px
     margin-top: 261px
+    @media (max-width: 600px)
+     position: absolute
+     left: 115px
+     width: 127px
+     font-size: 25px
+
   &_body1_text
    font-size: 14px
    color: $grey
    font-family: OpenSans
    margin-top: 84px
+   @media (max-width: 600px)
+     position: absolute
+     top: 232px
+     left: 52px
+     text-align: center
+     width: 256px
+     font-size: 18px
+     color: #a9a8a8
   &_body2 img
    position: absolute
    top: -32px
    right: -198px
 
+@media (max-width: 1078px)
+    .aboutus_body2 img
+      display: none
 
-@media (max-width: 905px)
- .aboutus_body2
-   display: none
+.aboutus_mini img
+  display: none
+  position: absolute
+
+@media (min-width: 769px) and (max-width: 1078px)
+  .aboutus_mini img
+    display: inline-block
+    right: 8px
 
 @media (max-width: 600px)
   .legs img
@@ -184,7 +203,7 @@ $db: #36aeea
 .legsmini
   position: absolute
   display: none
-  margin: 6% 17%
+  margin: 6% 20%
 
 @media (max-width: 600px)
   .legsmini
@@ -197,10 +216,9 @@ $db: #36aeea
   margin-top: 270px
   z-index: 1
   position: relative
-  @media (min-width: 600px) and (max-width: 769px)
+  @media (min-width: 600px) and (max-width: 992px)
     right: 24px
     top: -75px
-
 
 .button_readmore
   font-size: 12px
@@ -211,13 +229,14 @@ $db: #36aeea
   z-index: 100
   position: relative
   top: 11px
+  @media (max-width: 600px)
+    top: 517px
+    left: 95px
+    width: 143px
 .zigzag_block2
   margin-top: -106px
   @media (max-width: 600px)
     display: none
-
-
-
 
 .block_3
   height: 1065px
@@ -231,8 +250,10 @@ $db: #36aeea
   &_text2
   padding-top: 70px
 .outjornal_zigzag2 img
- box-sizing: content-box
  margin-bottom: 30px
+ margin-left: 37%
+ @media (max-width: 600px)
+   display: none
 .lovetext
   padding-top: 40px
   text-align: center
@@ -250,6 +271,7 @@ $db: #36aeea
    padding-top: 15px
 .loveimage1
   background: url("../images/ImageBackground1.png") no-repeat
+  background-size: contain
   position: relative
 .triangle1
   border-top: 10px solid transparent
@@ -276,9 +298,11 @@ $db: #36aeea
   height: 379px
 .loveimage2
   background: url("../images/Layer49.png") no-repeat
+  background-size: contain
   position: relative
 .nature_image
  background: url("../images/9127271170_42c133847e_z.png") no-repeat
+ background-size: contain
 .treetext, .watertext
   padding-top: 49px
   text-align: center
@@ -296,21 +320,62 @@ $db: #36aeea
    @extend %shared-block
   &_3, &_6
    @extend %shared-block-1
-.block_4
-  height: 651px
-  background: url("../images/Layer10.png") no-repeat center
 
+.block_4
+  background: url("../images/Layer10.png") no-repeat center
+  width: 100%
 .go_zigzag
   padding-top: 149px
+  @media (max-width: 600px)
+    display: none
+@media (max-width: 600px)
+  .wanna_go
+   margin-top: 5%
+@media (max-width: 600px)
+ .spruce
+   display: none
 .wanna_go_1
   padding-top: 25px
   font-family: Opensansbold
   font-size: 15px
+  @media (max-width: 600px)
+   font-size: 25px
+   text-align: center
 .wanna_go_2
   color: $grey
+  @media (max-width: 600px)
+    font-size: 20px
+    text-align: center
+@media (min-width: 450px) and (max-width: 700px)
+  .tree, .water
+   top: -260px
+@media (min-width: 350px) and (max-width: 450px)
+  .tree, .water
+    top: -415px
+
+@media (max-width: 350px)
+  .tree, .water
+     top: -573px
+
+@media (max-width: 600px)
+ .block_4_flex
+   flex-direction: column
+
+@media (max-width: 600px)
+  .borderform
+    display: none
+
+
 .form1, .form2
  border: white 1px solid
  padding: 25px
+ @media (max-width: 600px)
+   padding: 13px
+
+@media (max-width: 600px)
+  .form2
+    margin-top: 20px
+
 .borderform
  height: 30px
  margin: auto
@@ -321,6 +386,9 @@ $db: #36aeea
  border: 2px solid white
  font-size: 16px
  font-family: Opensansbold
+ @media (max-width: 600px)
+   margin-top: 25px
+   padding: 16px 45px
 .Locktext
  font-family: OpenSans
  color: $db
@@ -332,6 +400,9 @@ $db: #36aeea
  position: absolute
  top: -208px
  left: 149px
+ @media (max-width: 992px)
+   display: none
+
 .block_51
   height: 737px
 .zigzagx
@@ -658,7 +729,6 @@ $db: #36aeea
   font-size: 26px
   color: white
   top: 258px
-
 %shared-block_6_images
   position: absolute
   z-index: 1
