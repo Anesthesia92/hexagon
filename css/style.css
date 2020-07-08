@@ -414,6 +414,8 @@
 @media (max-width: 600px) {
   .wanna_go {
     margin-top: 5%;
+    flex: 2 0 75%;
+    max-width: 100%;
   }
 }
 @media (max-width: 600px) {
@@ -525,19 +527,41 @@
   }
 }
 
-.block_51 {
-  height: 737px;
+.block_5_hexagons {
+  margin-top: 60px;
+}
+@media (max-width: 600px) {
+  .block_5_hexagons {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 25px;
+  }
 }
 
 .zigzagx {
   padding-top: 60px;
-  margin: 0 auto;
   margin-left: 50px;
+}
+@media (max-width: 769px) {
+  .zigzagx {
+    max-width: 100%;
+    margin-left: -47px;
+  }
+}
+@media (max-width: 360px) {
+  .zigzagx {
+    margin-left: 34px;
+  }
 }
 
 .zigzagx img {
   padding-left: 80px;
   width: auto;
+}
+@media (max-width: 768px) {
+  .zigzagx img {
+    display: none;
+  }
 }
 
 .howwe {
@@ -545,14 +569,36 @@
   font-size: 30px;
   padding-top: 20px;
 }
-
+@media (max-width: 769px) {
+  .howwe {
+    width: 230px;
+    top: 2px;
+    left: -88%;
+  }
+}
 .numbers {
   padding-top: 50px;
+}
+
+.circle1 {
+  margin-left: 102px;
 }
 
 .numbers_1, .numbers_2, .numbers_3, .numbers_4 {
   height: 114px;
   position: relative;
+}
+
+@media (max-width: 600px) {
+  .linegradient1, .linegradient2, .linegradient3 {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .linegradient2 {
+    display: none;
+  }
 }
 
 .hex_round1, .hex_round2, .hex_round3, .hex_round4 {
@@ -562,18 +608,28 @@
   background: #f0f3f6;
   border: #f0f3f6;
   margin-left: 34px;
+  margin-top: 55px;
 }
 
 .hexagon1, .hexagon2, .hexagon3, .hexagon4 {
   position: absolute;
   left: 78px;
-  top: 27px;
+  top: 125px;
+}
+
+.hexagons1, .hexagons2, .hexagons3, .hexagons4 {
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .hexagons1, .hexagons2, .hexagons3, .hexagons4 {
+    max-width: 100%;
+  }
 }
 
 .hexagon1_icon img, .hexagon2_icon img, .hexagon3_icon img, .hexagon4_icon img {
   position: absolute;
   left: 123px;
-  top: 71px;
+  top: 167px;
 }
 
 .hexa_lorem {
@@ -592,20 +648,56 @@
   margin-left: 21px;
   text-align: center;
 }
+@media (min-width: 700px) and (max-width: 992px) {
+  .hexa_amet {
+    width: 70%;
+  }
+}
+@media (min-width: 380px) and (max-width: 600px) {
+  .hexa_amet {
+    width: 60%;
+  }
+}
 
 .go_zigzag2 {
   margin: 0 auto;
   margin-top: 78px;
 }
+@media (max-width: 768px) {
+  .go_zigzag2 {
+    display: none;
+  }
+}
 
 .block_6 {
   background: url("../images/worldmap-dots.png") no-repeat 50% 10%;
-  height: 1196px;
+}
+
+.block_6_back {
+  background: url("../images/Group 65.png") no-repeat 100%;
+  background-size: contain;
+  height: 500px;
+}
+@media (min-width: 1499px) {
+  .block_6_back {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .block_6_back {
+    display: none;
+  }
 }
 
 .block_6_tr {
-  height: 549px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .block_6_tr {
+    flex-direction: column;
+  }
 }
 
 .block_6_travel {
@@ -615,136 +707,125 @@
   margin-top: 36px;
 }
 
-.block_6 img {
+.block_6_img {
   position: relative;
-  z-index: -100;
-  top: 170px;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  z-index: -1;
+  left: -400px;
+  top: -324px;
+}
+@media (max-width: 1500px) {
+  .block_6_img {
+    display: none;
+  }
 }
 
-.block_6_image1 img {
-  left: 110px;
+.block_6_pics {
+  margin-top: 80px;
+}
+@media (max-width: 600px) {
+  .block_6_pics {
+    margin-left: 45px;
+  }
 }
 
-.block_6_image2 img {
-  left: 155px;
+@media (min-width: 1500px) {
+  .block_6 {
+    height: 1131px;
+  }
 }
-
-.block_6_image3 img {
-  left: 105px;
-}
-
-.block_6_image4 img {
-  left: 149px;
+.block_6_image1, .block_6_image2, .block_6_image3, .block_6_image4, .block_6_image5 {
+  width: 200px;
+  height: 382px;
+  position: relative;
 }
 
 .stars4 {
-  top: 138px !important;
-  left: 71px !important;
+  margin-top: -747px;
+  margin-left: 9px;
 }
 
 .stars5 {
-  top: 138px !important;
-  left: 121px !important;
+  margin-top: -753px;
 }
+
 .stars5_1 {
-  top: 138px !important;
-  left: 69px !important;
+  margin-top: -759px;
 }
+
 .stars5_2 {
-  top: 138px !important;
-  left: 117px !important;
+  margin-top: -759px;
 }
 
 .stars3 {
-  top: 138px !important;
-  left: 48px !important;
+  margin-top: -759px;
 }
 
-.carpathian {
-  left: 31px;
+.carpathian, .Alps {
+  margin-top: -265px;
+  margin-left: 21px;
+}
+
+.Pyrenees, .Rocky, .Kavkaz {
+  margin-top: -238px;
+  margin-left: 21px;
 }
 
 .block6_l {
-  left: 31px;
+  margin-left: 20px;
 }
 
 .number3150 {
-  left: 31px;
+  margin-top: 92px;
+  margin-left: 19px;
 }
 
 .number793 {
-  left: 142px;
-}
-
-.Alps {
-  left: 74px;
+  MARGIN-TOP: -49px;
+  margin-left: 128px;
 }
 
 .block6_l2 {
-  left: 74px;
-}
-
-.number3150_2 {
-  left: 74px;
+  margin-top: -185px;
+  margin-left: 17px;
 }
 
 .number1893 {
-  left: 176px;
+  margin-top: 90px;
+  margin-left: 114px;
 }
 
-.Pyrenees {
-  left: 25px;
+.number3150_2 {
+  margin-top: 156px;
+  margin-left: 19px;
 }
 
-.block6_l3 {
-  left: 25px;
+.block6_l3, .block6_l4, .block6_l5 {
+  margin-left: 17px;
 }
 
-.number3150_3 {
-  left: 25px;
+.number2593, .number2123, .number593 {
+  margin-top: -49px;
+  margin-left: 117px;
 }
 
-.number2593 {
-  left: 120px;
+.number3150_3, .number3150_4, .number3150_5 {
+  margin-top: 92px;
+  margin-left: 18px;
 }
 
-.Rocky {
-  left: 74px;
+@media (max-width: 500px) {
+  .block_7_1 {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
-
-.block6_l4 {
-  left: 74px;
-}
-
-.number3150_4 {
-  left: 74px;
-}
-
-.number2123 {
-  left: 176px;
-}
-
-.number3150_5 {
-  left: 25px;
-}
-
-.number593 {
-  left: 120px;
-}
-
-.block_7 {
-  height: 913px;
-}
-
 .bl_7_zigzag img {
   margin-left: 46%;
-  margin-top: 74px;
+}
+@media (max-width: 768px) {
+  .bl_7_zigzag img {
+    display: none;
+  }
 }
 
 .block_7_gallery {
@@ -864,6 +945,31 @@
   margin-bottom: 3rem;
 }
 
+.block6_l, .block6_l2, .block6_l3, .block6_l4, .block6_l5 {
+  font-family: OpenSans;
+  font-size: 16px;
+  color: white;
+}
+
+.carpathian, .Alps, .Pyrenees, .Rocky, .Kavkaz {
+  font-family: OpenSans;
+  font-size: 26px;
+  color: white;
+}
+
+.number3150, .number3150_2, .number3150_3, .number3150_4, .number3150_5 {
+  font-family: OpenSans;
+  font-size: 18px;
+  color: white;
+  text-decoration: line-through;
+}
+
+.number793, .number1893, .number2593, .number2123, .number593 {
+  font-family: Opensans extrabold;
+  font-size: 26px;
+  color: white;
+}
+
 .block_9_form {
   color: #f5f4f4;
   height: 50px;
@@ -903,49 +1009,6 @@
   margin-top: 190px;
 }
 
-.number793, .number1893, .number2593, .number2123, .number593 {
-  position: absolute;
-  z-index: 2;
-  font-family: Opensans extrabold;
-  font-size: 26px;
-  top: 445px;
-  color: white;
-}
-
-.number3150, .number3150_2, .number3150_3, .number3150_4, .number3150_5 {
-  position: absolute;
-  z-index: 2;
-  font-family: OpenSans;
-  font-size: 18px;
-  top: 448px;
-  color: white;
-  text-decoration: line-through;
-}
-
-.block6_l, .block6_l2, .block6_l3, .block6_l4, .block6_l5 {
-  position: absolute;
-  z-index: 2;
-  font-family: OpenSans;
-  font-size: 16px;
-  top: 308px;
-  color: white;
-}
-
-.carpathian, .Alps, .Pyrenees, .Rocky, .Kavkaz {
-  position: absolute;
-  z-index: 2;
-  font-family: OpenSans;
-  font-size: 26px;
-  color: white;
-  top: 258px;
-}
-
-.block_6_image1 img, .block_6_image2 img, .block_6_image3 img, .block_6_image4 img, .block_6_image5 img {
-  position: absolute;
-  z-index: 1;
-  top: 304px;
-}
-
 .vertical1, .vertical2, .vertical3, .vertical4 {
   height: 70px;
   background-image: linear-gradient(99deg, #f5f4f4, #f5f4f4 90%, transparent 90%, transparent 100%);
@@ -964,7 +1027,7 @@
   background-size: 30px 3px;
   border: none;
   position: absolute;
-  width: 242px;
+  width: 310px;
   top: 22px;
   left: 165px;
 }
@@ -983,7 +1046,7 @@
   border: 2px solid #36aeea;
   color: #36aeea;
   font-family: Opensansbold;
-  margin: 0 auto;
+  margin-left: 106px;
 }
 
 .lovetext_3, .treetext_2, .treetext_5, .watertext_2, .watertext_5 {

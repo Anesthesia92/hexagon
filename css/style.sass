@@ -331,6 +331,8 @@ $db: #36aeea
 @media (max-width: 600px)
   .wanna_go
    margin-top: 5%
+   flex: 2 0 75%
+   max-width: 100%
 @media (max-width: 600px)
  .spruce
    display: none
@@ -352,26 +354,20 @@ $db: #36aeea
 @media (min-width: 350px) and (max-width: 450px)
   .tree, .water
     top: -415px
-
 @media (max-width: 350px)
   .tree, .water
      top: -573px
-
 @media (max-width: 600px)
  .block_4_flex
    flex-direction: column
-
 @media (max-width: 600px)
   .borderform
     display: none
-
-
 .form1, .form2
  border: white 1px solid
  padding: 25px
  @media (max-width: 600px)
    padding: 13px
-
 @media (max-width: 600px)
   .form2
     margin-top: 20px
@@ -402,22 +398,38 @@ $db: #36aeea
  left: 149px
  @media (max-width: 992px)
    display: none
-
-.block_51
-  height: 737px
+.block_5_hexagons
+  margin-top: 60px
+  @media (max-width: 600px)
+    flex-wrap: wrap
+    flex-direction: column
+    margin-left: 25px
 .zigzagx
   padding-top: 60px
-  margin: 0 auto
   margin-left: 50px
+  @media (max-width: 769px)
+    max-width: 100%
+    margin-left: -47px
+  @media (max-width: 360px)
+    margin-left: 34px
 .zigzagx img
   padding-left: 80px
   width: auto
+  @media (max-width: 768px)
+    display: none
 .howwe
   font-family: Opensansbold
   font-size: 30px
   padding-top: 20px
+  @media (max-width: 769px)
+    width: 230px
+    top: 2px
+    left: -88%
+  @media (max-width: 360px)
 .numbers
   padding-top: 50px
+.circle1
+  margin-left: 102px
 .circle1, .circle2, .circle3, .circle4
   @extend %shared-сircle
 
@@ -426,10 +438,14 @@ $db: #36aeea
   position: relative
 .linegradient1, .linegradient2, .linegradient3
   @extend %shared-linegradient
+  @media (max-width: 600px)
+    display: none
+.linegradient2
+  @media (max-width: 769px)
+    display: none
 
 .vertical1, .vertical2, .vertical3, .vertical4
   @extend %shared-linegradientvertical
-
 .hex_round1, .hex_round2, .hex_round3, .hex_round4
   border-radius: 50%
   width: 180px
@@ -437,17 +453,20 @@ $db: #36aeea
   background:  #f0f3f6
   border: #f0f3f6
   margin-left: 34px
+  margin-top: 55px
 
 .hexagon1, .hexagon2, .hexagon3, .hexagon4
   position: absolute
   left: 78px
-  top: 27px
-
+  top: 125px
+.hexagons1, .hexagons2, .hexagons3, .hexagons4
+  flex-wrap: wrap
+  @media (max-width: 600px)
+    max-width: 100%
 .hexagon1_icon img, .hexagon2_icon img, .hexagon3_icon img, .hexagon4_icon img
   position: absolute
   left: 123px
-  top: 71px
-
+  top: 167px
 .hexa_lorem
   font-family: robotobl
   font-size: 18px
@@ -461,134 +480,132 @@ $db: #36aeea
   color: $grey
   margin-left: 21px
   text-align: center
+  @media  (min-width: 700px) and (max-width: 992px)
+    width: 70%
+  @media  (min-width: 380px) and (max-width: 600px)
+    width: 60%
 .go_zigzag2
   margin: 0 auto
   margin-top: 78px
+  @media (max-width: 768px)
+    display: none
 .block_6
   background: url("../images/worldmap-dots.png") no-repeat 50% 10%
-  height: 1196px
+
+.block_6_back
+  background: url("../images/Group 65.png")  no-repeat 100%
+  background-size: contain
+  height: 500px
+  @media (min-width: 1499px)
+    display: none
+  @media (max-width: 700px)
+    display: none
+
 .block_6_tr
-  height: 549px
   position: relative
+  display: flex
+  flex-wrap: wrap
+  @media (max-width: 600px)
+    flex-direction: column
+
 .block_6_travel
   font-size: 32px
   font-family: OpenSansBold
   text-align: center
   margin-top: 36px
-
-.block_6 img
+.block_6_img
   position: relative
-  z-index: -100
-  top: 170px
-  left: 50%
-  -webkit-transform: translate(-50%, -50%)
-  -moz-transform: translate(-50%, -50%)
-  -ms-transform: translate(-50%, -50%)
-  -o-transform: translate(-50%, -50%)
-  transform: translate(-50%, -50%)
+  z-index: -1
+  left: -400px
+  top: -324px
+  @media (max-width: 1500px)
+    display: none
 
-.block_6_image1 img
-  @extend %shared-block_6_images
-  left: 110px
+.block_6_pics
+  margin-top: 80px
+  @media (max-width: 600px)
+    margin-left: 45px
 
-.block_6_image2 img
-  @extend %shared-block_6_images
-  left: 155px
+@media (min-width: 1500px)
+ .block_6
+   height: 1131px
 
-.block_6_image3 img
-  @extend %shared-block_6_images
-  left: 105px
 
-.block_6_image4 img
-  @extend %shared-block_6_images
-  left: 149px
-
-.block_6_image5 img
-  @extend %shared-block_6_images
+.block_6_image1, .block_6_image2, .block_6_image3, .block_6_image4, .block_6_image5
+  width: 200px
+  height: 382px
+  position: relative
 
 .stars4
-  top: 138px  !important
-  left: 71px  !important
+  margin-top: -747px
+  margin-left: 9px
 .stars5
-  top: 138px !important
-  left: 121px  !important
-  &_1
-   top: 138px !important
-   left: 69px !important
-  &_2
-   top: 138px !important
-   left: 117px !important
-
+  margin-top: -753px
+.stars5_1
+  margin-top: -759px
+.stars5_2
+  margin-top: -759px
 .stars3
-  top: 138px !important
-  left: 48px !important
+  margin-top: -759px
 
-.carpathian
-  @extend %shared-block6_text
-  left: 31px
+.carpathian, .Alps
+ @extend %shared-block6_text
+ margin-top: -265px
+ margin-left: 21px
+
+.Pyrenees, .Rocky, .Kavkaz
+ @extend %shared-block6_text
+ margin-top: -238px
+ margin-left: 21px
 .block6_l
-  @extend %shared-block6_l
-  left: 31px
-.number3150
-  @extend %shared-block6_numbers
-  left: 31px
-.number793
-  @extend %shared-block6_numbers2
-  left: 142px
+ @extend %shared-block6_l
+ margin-left: 20px
 
-.Alps
-  @extend %shared-block6_text
-  left: 74px
+.number3150
+ @extend %shared-block6_numbers
+ margin-top: 92px
+ margin-left: 19px
+
+.number793
+ @extend %shared-block6_numbers2
+ MARGIN-TOP: -49px
+ margin-left: 128px
+
 .block6_l2
   @extend %shared-block6_l
-  left: 74px
-.number3150_2
-  @extend %shared-block6_numbers
-  left: 74px
+  margin-top: -185px
+  margin-left: 17px
+
 .number1893
   @extend %shared-block6_numbers2
-  left: 176px
+  margin-top: 90px
+  margin-left: 114px
+.number3150_2
+  @extend %shared-block6_numbers
+  margin-top: 156px
+  margin-left: 19px
 
-.Pyrenees
-  @extend %shared-block6_text
-  left: 25px
-.block6_l3
+.block6_l3,.block6_l4,.block6_l5
   @extend %shared-block6_l
-  left: 25px
-.number3150_3
-  @extend %shared-block6_numbers
-  left: 25px
-.number2593
-  @extend %shared-block6_numbers2
-  left: 120px
-.Rocky
-  @extend %shared-block6_text
-  left: 74px
-.block6_l4
-  @extend %shared-block6_l
-  left: 74px
-.number3150_4
-  @extend %shared-block6_numbers
-  left: 74px
-.number2123
-  @extend %shared-block6_numbers2
-  left: 176px
+  margin-left: 17px
 
-.Kavkaz
-  @extend %shared-block6_text
-.block6_l5
-  @extend %shared-block6_l
-.number3150_5
-  @extend %shared-block6_numbers
-  left: 25px
-.number593
+.number2593,.number2123, .number593
   @extend %shared-block6_numbers2
-  left: 120px
-.block_7
-  height: 913px
+  margin-top: -49px
+  margin-left: 117px
+.number3150_3,.number3150_4, .number3150_5
+  @extend %shared-block6_numbers
+  margin-top: 92px
+  margin-left: 18px
+
+@media (max-width: 500px)
+ .block_7_1
+   flex-direction: column
+   flex-wrap: wrap
 .bl_7_zigzag img
  margin-left: 46%
- margin-top: 74px
+ @media (max-width: 768px)
+  display: none
 .block_7_gallery
   font-size: 32px
   font-family: OpenSansBold
@@ -621,7 +638,6 @@ $db: #36aeea
   margin-top: 30px
 .block_9_1
   margin-top: 80px
-
 .block_9_lorem
   line-height: 2
   color: $grey
@@ -636,7 +652,6 @@ $db: #36aeea
 .block_9
   height: 1357px
   background: url("../images/bacground.png") 50% no-repeat
-
 .bl_9
   height: 1286px
 .block_9_2
@@ -668,6 +683,25 @@ $db: #36aeea
   text-align: center
   margin-bottom: 3rem
 
+%shared-block6_l
+ font-family: OpenSans
+ font-size: 16px
+ color: white
+%shared-block6_text
+ font-family: OpenSans
+ font-size: 26px
+ color: white
+%shared-block6_numbers
+ font-family: OpenSans
+ font-size: 18px
+ color: white
+ text-decoration: line-through
+
+%shared-block6_numbers2
+ font-family: Opensans extrabold
+ font-size: 26px
+ color: white
+
 .block_9_form
  color: $wg
  height: 50px
@@ -698,42 +732,6 @@ $db: #36aeea
 .block-9_vk
   margin-top: 190px
 
-%shared-block6_numbers2
-  position: absolute
-  z-index: 2
-  font-family: Opensans extrabold
-  font-size: 26px
-  top: 445px
-  color: white
-
-%shared-block6_numbers
-  position: absolute
-  z-index: 2
-  font-family: OpenSans
-  font-size: 18px
-  top: 448px
-  color: white
-  text-decoration: line-through
-
-%shared-block6_l
-  position: absolute
-  z-index: 2
-  font-family: OpenSans
-  font-size: 16px
-  top: 308px
-  color: white
-%shared-block6_text
-  position: absolute
-  z-index: 2
-  font-family: OpenSans
-  font-size: 26px
-  color: white
-  top: 258px
-%shared-block_6_images
-  position: absolute
-  z-index: 1
-  top: 304px
-
 %shared-linegradientvertical
   height: 70px
   background-image: linear-gradient(99deg, $wg, $wg 90%, transparent 90%, transparent 100%)
@@ -750,7 +748,7 @@ $db: #36aeea
   background-size: 30px 3px
   border: none
   position: absolute
-  width: 242px
+  width: 310px
   top: 22px
   left: 165px
 
@@ -768,7 +766,8 @@ $db: #36aeea
   border:  2px solid $db
   color: $db
   font-family: Opensansbold
-  margin: 0 auto
+  margin-left: 106px
+
 %shared-block
   font-family: OpenSans
   font-size: 14px
