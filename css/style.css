@@ -813,6 +813,10 @@
   margin-left: 18px;
 }
 
+.block_7_1 {
+  margin-top: 70px;
+}
+
 @media (max-width: 500px) {
   .block_7_1 {
     flex-direction: column;
@@ -839,29 +843,29 @@
   margin-top: 30px;
 }
 
+.block7_photos, block7_photos2 {
+  margin-bottom: 30px;
+}
+
 .block_8 {
-  height: 183px;
   background-color: #f5f4f4;
+}
+@media (min-width: 992px) {
+  .block_8 {
+    height: 183px;
+  }
+}
+
+.block_8_1 {
+  margin-top: 80px;
 }
 
 .slack, .adobe, .google, .nike, .facebook, .spotifi {
   height: 183px;
 }
 
-.slack2, .adobe2, .google2, .nike2, .facebook2, .spotifi2 {
+.slack2, .adobe2, .google2, .nike2, .facebook img, .spotifi2 {
   margin-top: 81px;
-}
-
-.adobe {
-  margin-left: 35px;
-}
-
-.facebook {
-  margin-left: 35px;
-}
-
-.nike {
-  margin-left: 16px;
 }
 
 .bl_9_zigzag img {
