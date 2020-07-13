@@ -438,9 +438,6 @@ $db: #36aeea
   position: relative
 .linegradient1, .linegradient2, .linegradient3
   @extend %shared-linegradient
-  @media (max-width: 600px)
-    display: none
-.linegradient2
   @media (max-width: 769px)
     display: none
 
@@ -530,11 +527,11 @@ $db: #36aeea
  .block_6
    height: 1131px
 
-
 .block_6_image1, .block_6_image2, .block_6_image3, .block_6_image4, .block_6_image5
   width: 200px
   height: 382px
   position: relative
+  margin-bottom: 20px
 
 .stars4
   margin-top: -747px
@@ -598,6 +595,9 @@ $db: #36aeea
   margin-top: 92px
   margin-left: 18px
 
+@media (max-width: 769px)
+  .block_7
+   margin-top: 70px
 .block_7_1
   margin-top: 70px
 @media (max-width: 500px)
@@ -613,8 +613,10 @@ $db: #36aeea
   font-family: OpenSansBold
   text-align: center
   margin-top: 30px
-.img2,.img4, .img6
+.img2, .img6, .img4
   margin-top: 30px
+.img4
+  margin-bottom: 30px
 
 .block7_photos, block7_photos2
   margin-bottom: 30px
@@ -624,7 +626,6 @@ $db: #36aeea
   @media (min-width: 992px)
    height: 183px
 
-
 .block_8_1
   margin-top: 80px
 
@@ -632,11 +633,14 @@ $db: #36aeea
   height: 183px
 .slack2, .adobe2, .google2, .nike2, .facebook img, .spotifi2
   margin-top: 81px
-
-
+.adobe, .spotifi
+  text-align: -webkit-center
 .bl_9_zigzag img
   margin-left: 46%
   margin-top: 74px
+  @media (max-width: 769px)
+   display: none
+
 .our_clientssay
   font-size: 30px
   font-family: OpenSansBold
@@ -644,9 +648,13 @@ $db: #36aeea
   margin-top: 30px
 .block_9_1
   margin-top: 80px
+  @media (max-width: 500px)
+    flex-direction: column
 .block_9_lorem
   line-height: 2
-  color: $grey
+  color: #a8a2a2
+  @media (max-width: 769px)
+    color: #817171
 .Pavliv
   height: 50px
 .Pavliv1, .JohnS1
@@ -656,10 +664,8 @@ $db: #36aeea
   color: $blue
   font-family: Opensans
 .block_9
-  height: 1357px
-  background: url("../images/bacground.png") 50% no-repeat
-.bl_9
-  height: 1286px
+  background: url("../images/bacground.png") 50% 100% no-repeat
+
 .block_9_2
   margin-top: 100px
 .blur
@@ -669,11 +675,14 @@ $db: #36aeea
 .sendbutton
   font-size: 12px
   font-family: OpenSansBold
-  padding: 20px 238px
+  padding: 20px
   letter-spacing: 3px
   background: rgba(86, 199, 255, 0.8)
   border: 1px solid $blue
-  margin-left: 9px
+  width: -webkit-fill-available
+  justify-content: center
+  @media (max-width: 992px)
+    margin-left: 0
 
 .contacts
  font-family: OpenSansBold
@@ -682,12 +691,49 @@ $db: #36aeea
  color: $db
  text-align: center
  margin-top: 35px
- margin-bottom: 0rem
+ margin-bottom: 0
+ @media (max-width: 769px)
+   font-size: 22px
 .signup
   font-family: OpenSans
   font-size: 12px
   text-align: center
   margin-bottom: 3rem
+  @media (max-width: 769px)
+    font-size: 16px
+@media (max-width: 769px)
+ .block_9_flex
+   font-size: 18px
+
+.block_9_form
+  color: $wg
+  height: 50px
+  width: -webkit-fill-available
+  margin: 0 auto
+  &::webkit-input-placeholder
+    color: #c0c0c0
+  &::ms-input-placeholder
+    color: #C0C0C0
+  &::ms-input-placeholder
+    color: #c0c0c0
+  &::placeholder
+    color: #c0c0c0
+.block-9_footer
+  font-family: OpenSans
+  font-size: 18px
+  color: #5c8592
+  margin-top: 195px
+
+.block-9_footer2
+  margin-top: 190px
+  font-family: robotobl
+  font-size: 27px
+  color: #7ecada
+  font-weight: bold
+  text-align: right
+
+.block-9_vk
+  margin-top: 190px
 
 %shared-block6_l
  font-family: OpenSans
@@ -708,35 +754,6 @@ $db: #36aeea
  font-size: 26px
  color: white
 
-.block_9_form
- color: $wg
- height: 50px
- width: 519px
- margin: 0 auto
- &::webkit-input-placeholder
-   color: #c0c0c0
- &::ms-input-placeholder
-   color: #C0C0C0
- &::ms-input-placeholder
-   color: #c0c0c0
- &::placeholder
-   color: #c0c0c0
-.block-9_footer
-  font-family: OpenSans
-  font-size: 18px
-  color: #5c8592
-  margin-top: 195px
-
-.block-9_footer2
-  margin-top: 190px
-  font-family: robotobl
-  font-size: 27px
-  color: #7ecada
-  font-weight: bold
-  text-align: right
-
-.block-9_vk
-  margin-top: 190px
 
 %shared-linegradientvertical
   height: 70px
