@@ -292,10 +292,6 @@
   }
 }
 
-.block_3 {
-  height: 1065px;
-}
-
 .outjornal {
   height: 218px;
   background-color: white;
@@ -330,12 +326,11 @@
   font-size: 16px;
 }
 .lovetext_4 {
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .loveimage1 {
   background: url("../images/ImageBackground1.png") no-repeat;
-  background-size: contain;
   position: relative;
 }
 
@@ -366,23 +361,17 @@
   left: 0;
 }
 
-.centerlove, .centerlove2, .centernature {
-  height: 379px;
-}
-
 .loveimage2 {
   background: url("../images/Layer49.png") no-repeat;
-  background-size: contain;
   position: relative;
 }
 
 .nature_image {
   background: url("../images/9127271170_42c133847e_z.png") no-repeat;
-  background-size: contain;
 }
 
 .treetext, .watertext {
-  padding-top: 49px;
+  margin-top: 49px;
   text-align: center;
   color: #108bb8;
   font-family: Opensansbold;
@@ -426,7 +415,7 @@
 .wanna_go_1 {
   padding-top: 25px;
   font-family: Opensansbold;
-  font-size: 15px;
+  font-size: 20px;
 }
 @media (max-width: 600px) {
   .wanna_go_1 {
@@ -994,13 +983,13 @@
   width: -webkit-fill-available;
   margin: 0 auto;
 }
-.block_9_form::webkit-input-placeholder {
+.block_9_form::placeholder {
   color: #c0c0c0;
 }
-.block_9_form::ms-input-placeholder {
+.block_9_form::placeholder {
   color: #C0C0C0;
 }
-.block_9_form::ms-input-placeholder {
+.block_9_form::placeholder {
   color: #c0c0c0;
 }
 .block_9_form::placeholder {
