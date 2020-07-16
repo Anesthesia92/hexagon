@@ -25,7 +25,7 @@ $db: #36aeea
     padding-top: 15px
   &_logo
     font-size: 29px
-    font-family: Bringin
+    font-family: Bringin, sans-serif
     &_moun
      color: $blue
     &_tain
@@ -37,7 +37,7 @@ $db: #36aeea
    color: $blue
    font-size: 12px
    font-weight: bold
-   font-family: raleway
+   font-family: raleway, sans-serif
    border: 3px solid $blue
    padding: 12px 45px
    z-index: 2
@@ -50,7 +50,7 @@ $db: #36aeea
 .header_nav_link
   color: $wg
   font-weight: bold
-  font-family: OpenSans
+  font-family: OpenSans, sans-serif
   padding: .6rem
   font-size: 14px
 .header_body
@@ -74,13 +74,13 @@ $db: #36aeea
 
   &_travel
    color: white
-   font-family: Opensansbold
+   font-family: Opensansbold, serif
    position: absolute
    letter-spacing: 4px
    box-sizing: border-box
 .Mountains
  color: $blue
- font-family: Bringin
+ font-family: Bringin, sans-serif
  position: absolute
  top: 28px
 
@@ -105,7 +105,7 @@ $db: #36aeea
 .Lorem_block1
   color: #dee0e3
   margin-top: 113px
-  font-family: OpenSans
+  font-family: OpenSans, sans-serif
 
 @media screen and (max-width: 360px)
   .Lorem_block1
@@ -132,7 +132,7 @@ $db: #36aeea
   margin-left: 20px
   padding: 19px 65px
   font-size: 13px
-  font-family: RalewayBold
+  font-family: RalewayBold, sans-serif
   letter-spacing: 3px
   background: rgba(86, 199, 255, 0.8)
   border: 1px solid $blue
@@ -148,7 +148,7 @@ $db: #36aeea
   &_body1
     height: 667px
   &_body1_writeabout
-    font-family: Opensansbold
+    font-family: Opensansbold, sans-serif
     font-size: 20px
     margin-top: 261px
     @media (max-width: 600px)
@@ -160,7 +160,7 @@ $db: #36aeea
   &_body1_text
    font-size: 14px
    color: $grey
-   font-family: OpenSans
+   font-family: OpenSans, sans-serif
    margin-top: 84px
    @media (max-width: 600px)
      position: absolute
@@ -217,7 +217,7 @@ $db: #36aeea
   background-color: $blue
   border: 3px solid $blue
   padding: 10px 28px
-  font-family: Opensansbold
+  font-family: Opensansbold, sans-serif
   z-index: 100
   position: relative
   top: 11px
@@ -230,29 +230,35 @@ $db: #36aeea
   @media (max-width: 600px)
     display: none
 
-.outjornal
-  height: 218px
+.block_3
+  margin-top: 77px
+  margin-bottom: 89px
+.our_jornal
+  height: 155px
   background-color: white
-  &_text_1
-   font-size: 30px
-   font-family: Opensansbold
-   text-align: center
-  &_text2
-  padding-top: 70px
-.outjornal_zigzag2 img
+.out_jornal_text_1
+ font-size: 30px
+ font-family: Opensansbold, sans-serif
+ text-align: center
+
+.our_jornal_zigzag img
  margin-bottom: 30px
  margin-left: 37%
  @media (max-width: 600px)
    display: none
-.lovetext
+
+.block_3_love, .block_3_nature
+  justify-content: center
+
+.love_text
   padding-top: 40px
   text-align: center
   &_1
    color: $blue
-   font-family: Opensansbold
+   font-family: Opensansbold, sans-serif
    font-size: 11px
   &_2
-   font-family: Opensansbold
+   font-family: Opensansbold, sans-serif
    font-size: 16px
   &_3
    @extend %shared-block
@@ -260,7 +266,7 @@ $db: #36aeea
    @extend %shared-block-1
    margin-top: 15px
 
-.loveimage1
+.love_image1
   background: url("../images/ImageBackground1.png") no-repeat
   position: relative
 .triangle1
@@ -285,19 +291,33 @@ $db: #36aeea
   top: 50px
   left: 0
 
-.loveimage2
+.love_image1, .love_image2,.love_text_block, .tree_block, .nature_image, .water_block
+ height: 380px
+ width: 380px
+
+.center_love, .center_love2, .center_nature
+  width: inherit
+  height: inherit
+
+.love_text, .tree_text_block, .water_text_block
+  width: inherit
+  
+.center_love img, .center_love2 img, .center_nature img
+  margin-top: 148px
+
+.love_image2
   background: url("../images/Layer49.png") no-repeat
   position: relative
 .nature_image
  background: url("../images/9127271170_42c133847e_z.png") no-repeat
-.treetext, .watertext
+.tree_text, .water_text
   margin-top: 49px
   text-align: center
   color: #108bb8
-  font-family: Opensansbold
+  font-family: Opensansbold, sans-serif
   font-size: 11px
   &_1, &_4
-   font-family: Opensansbold
+   font-family: Opensansbold, sans-serif
    font-size: 16px
    margin-top: 40px
    text-align: center
@@ -325,7 +345,7 @@ $db: #36aeea
    display: none
 .wanna_go_1
   padding-top: 25px
-  font-family: Opensansbold
+  font-family: Opensansbold, sans-serif
   font-size: 20px
   @media (max-width: 600px)
    font-size: 25px
@@ -335,9 +355,7 @@ $db: #36aeea
   @media (max-width: 600px)
     font-size: 20px
     text-align: center
-@media (min-width: 450px) and (max-width: 700px)
-  .tree, .water
-   top: -260px
+
 @media (min-width: 350px) and (max-width: 450px)
   .tree, .water
     top: -415px
@@ -368,12 +386,12 @@ $db: #36aeea
  background-color: $db
  border: 2px solid white
  font-size: 16px
- font-family: Opensansbold
+ font-family: Opensansbold, sans-serif
  @media (max-width: 600px)
    margin-top: 25px
    padding: 16px 45px
 .Locktext
- font-family: OpenSans
+ font-family: OpenSans, sans-serif
  color: $db
  vertical-align: baseline
 .spruce
@@ -405,7 +423,7 @@ $db: #36aeea
   @media (max-width: 768px)
     display: none
 .howwe
-  font-family: Opensansbold
+  font-family: Opensansbold, sans-serif
   font-size: 30px
   padding-top: 20px
   @media (max-width: 769px)
@@ -418,7 +436,7 @@ $db: #36aeea
 .circle1
   margin-left: 102px
 .circle1, .circle2, .circle3, .circle4
-  @extend %shared-сircle
+  @extend %shared-circle
 
 .numbers_1, .numbers_2, .numbers_3, .numbers_4
   height: 114px
@@ -452,14 +470,14 @@ $db: #36aeea
   left: 123px
   top: 167px
 .hexa_lorem
-  font-family: robotobl
+  font-family: robotobl, serif
   font-size: 18px
   font-weight: bold
   margin-bottom: 0
   margin-top: 30px
   margin-left: 41px
 .hexa_amet
-  font-family: "Roboto Light"
+  font-family: "Roboto Light", serif
   font-size: 16px
   color: $grey
   margin-left: 21px
@@ -494,7 +512,7 @@ $db: #36aeea
 
 .block_6_travel
   font-size: 32px
-  font-family: OpenSansBold
+  font-family: OpenSansBold, sans-serif
   text-align: center
   margin-top: 36px
 .block_6_img
@@ -597,7 +615,7 @@ $db: #36aeea
   display: none
 .block_7_gallery
   font-size: 32px
-  font-family: OpenSansBold
+  font-family: OpenSansBold, sans-serif
   text-align: center
   margin-top: 30px
 .img2, .img6, .img4
@@ -605,7 +623,7 @@ $db: #36aeea
 .img4
   margin-bottom: 30px
 
-.block7_photos, block7_photos2
+.block7_photos
   margin-bottom: 30px
 
 .block_8
@@ -630,7 +648,7 @@ $db: #36aeea
 
 .our_clientssay
   font-size: 30px
-  font-family: OpenSansBold
+  font-family: OpenSansBold, sans-serif
   text-align: center
   margin-top: 30px
 .block_9_1
@@ -646,10 +664,10 @@ $db: #36aeea
   height: 50px
 .Pavliv1, .JohnS1
   color: $blue
-  font-family: OpenSansBold
+  font-family: OpenSansBold, sans-serif
 .Pavliv2, .JohnS2
   color: $blue
-  font-family: Opensans
+  font-family: Opensans, sans-serif
 .block_9
   background: url("../images/bacground.png") 50% 100% no-repeat
 .block_9_2
@@ -658,20 +676,19 @@ $db: #36aeea
   backdrop-filter: blur(30px)
   height: 500px
   border-radius: 2%
-.sendbutton
+.send_button
   font-size: 12px
-  font-family: OpenSansBold
+  font-family: OpenSansBold, sans-serif
   padding: 20px
   letter-spacing: 3px
   background: rgba(86, 199, 255, 0.8)
   border: 1px solid $blue
-  width: -webkit-fill-available
   justify-content: center
   @media (max-width: 992px)
     margin-left: 0
 
 .contacts
- font-family: OpenSansBold
+ font-family: OpenSansBold, sans-serif
  font-size: 30px
  letter-spacing: 3px
  color: $db
@@ -681,7 +698,7 @@ $db: #36aeea
  @media (max-width: 769px)
    font-size: 22px
 .signup
-  font-family: OpenSans
+  font-family: OpenSans, sans-serif
   font-size: 12px
   text-align: center
   margin-bottom: 3rem
@@ -693,7 +710,7 @@ $db: #36aeea
 .block_9_form
   color: $wg
   height: 50px
-  width: -webkit-fill-available
+  width: 510px
   margin: 0 auto
   &::placeholder
     color: #c0c0c0
@@ -704,14 +721,14 @@ $db: #36aeea
   &::placeholder
     color: #c0c0c0
 .block-9_footer
-  font-family: OpenSans
+  font-family: OpenSans, sans-serif
   font-size: 18px
   color: #5c8592
   margin-top: 195px
 
 .block-9_footer2
   margin-top: 190px
-  font-family: robotobl
+  font-family: robotobl, sans-serif
   font-size: 27px
   color: #7ecada
   font-weight: bold
@@ -721,21 +738,21 @@ $db: #36aeea
   margin-top: 190px
 
 %shared-block6_l
- font-family: OpenSans
+ font-family: OpenSans, sans-serif
  font-size: 16px
  color: white
 %shared-block6_text
- font-family: OpenSans
+ font-family: OpenSans, sans-serif
  font-size: 26px
  color: white
 %shared-block6_numbers
- font-family: OpenSans
+ font-family: OpenSans, sans-serif
  font-size: 18px
  color: white
  text-decoration: line-through
 
 %shared-block6_numbers2
- font-family: Opensans extrabold
+ font-family: Opensans extrabold, sans-serif
  font-size: 26px
  color: white
 %shared-linegradientvertical
@@ -759,7 +776,7 @@ $db: #36aeea
   top: 22px
   left: 165px
 
-%shared-сircle
+%shared-circle
   background: #ffffff
   padding: 20px
   display: flex
@@ -772,16 +789,16 @@ $db: #36aeea
   max-height: 20px
   border:  2px solid $db
   color: $db
-  font-family: Opensansbold
+  font-family: Opensansbold, sans-serif
   margin-left: 106px
 
 %shared-block
-  font-family: OpenSans
+  font-family: OpenSans, sans-serif
   font-size: 14px
   color: $grey
   text-align: center
 %shared-block-1
-  font-family: "Times New Roman"
+  font-family: "Times New Roman", serif
   font-size: 14px
   font-style: oblique
   text-align: center

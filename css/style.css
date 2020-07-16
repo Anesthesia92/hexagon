@@ -28,7 +28,7 @@
 }
 .header_logo {
   font-size: 29px;
-  font-family: Bringin;
+  font-family: Bringin, sans-serif;
 }
 .header_logo_moun {
   color: #56c7ff;
@@ -44,7 +44,7 @@
   color: #56c7ff;
   font-size: 12px;
   font-weight: bold;
-  font-family: raleway;
+  font-family: raleway, sans-serif;
   border: 3px solid #56c7ff;
   padding: 12px 45px;
   z-index: 2;
@@ -61,7 +61,7 @@
 .header_nav_link {
   color: #f5f4f4;
   font-weight: bold;
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   padding: 0.6rem;
   font-size: 14px;
 }
@@ -91,7 +91,7 @@
 }
 .header_body_travel {
   color: white;
-  font-family: Opensansbold;
+  font-family: Opensansbold, serif;
   position: absolute;
   letter-spacing: 4px;
   box-sizing: border-box;
@@ -99,7 +99,7 @@
 
 .Mountains {
   color: #56c7ff;
-  font-family: Bringin;
+  font-family: Bringin, sans-serif;
   position: absolute;
   top: 28px;
 }
@@ -129,7 +129,7 @@
 .Lorem_block1 {
   color: #dee0e3;
   margin-top: 113px;
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
 }
 
 @media screen and (max-width: 360px) {
@@ -162,7 +162,7 @@
   margin-left: 20px;
   padding: 19px 65px;
   font-size: 13px;
-  font-family: RalewayBold;
+  font-family: RalewayBold, sans-serif;
   letter-spacing: 3px;
   background: rgba(86, 199, 255, 0.8);
   border: 1px solid #56c7ff;
@@ -181,7 +181,7 @@
   height: 667px;
 }
 .aboutus_body1_writeabout {
-  font-family: Opensansbold;
+  font-family: Opensansbold, sans-serif;
   font-size: 20px;
   margin-top: 261px;
 }
@@ -196,7 +196,7 @@
 .aboutus_body1_text {
   font-size: 14px;
   color: #bababa;
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   margin-top: 84px;
 }
 @media (max-width: 600px) {
@@ -270,7 +270,7 @@
   background-color: #56c7ff;
   border: 3px solid #56c7ff;
   padding: 10px 28px;
-  font-family: Opensansbold;
+  font-family: Opensansbold, sans-serif;
   z-index: 100;
   position: relative;
   top: 11px;
@@ -292,44 +292,54 @@
   }
 }
 
-.outjornal {
-  height: 218px;
-  background-color: white;
-  padding-top: 70px;
+.block_3 {
+  margin-top: 77px;
+  margin-bottom: 89px;
 }
-.outjornal_text_1 {
+
+.our_jornal {
+  height: 155px;
+  background-color: white;
+}
+
+.out_jornal_text_1 {
   font-size: 30px;
-  font-family: Opensansbold;
+  font-family: Opensansbold, sans-serif;
   text-align: center;
 }
-.outjornal_zigzag2 img {
+
+.our_jornal_zigzag img {
   margin-bottom: 30px;
   margin-left: 37%;
 }
 @media (max-width: 600px) {
-  .outjornal_zigzag2 img {
+  .our_jornal_zigzag img {
     display: none;
   }
 }
 
-.lovetext {
+.block_3_love, .block_3_nature {
+  justify-content: center;
+}
+
+.love_text {
   padding-top: 40px;
   text-align: center;
 }
-.lovetext_1 {
+.love_text_1 {
   color: #56c7ff;
-  font-family: Opensansbold;
+  font-family: Opensansbold, sans-serif;
   font-size: 11px;
 }
-.lovetext_2 {
-  font-family: Opensansbold;
+.love_text_2 {
+  font-family: Opensansbold, sans-serif;
   font-size: 16px;
 }
-.lovetext_4 {
+.love_text_4 {
   margin-top: 15px;
 }
 
-.loveimage1 {
+.love_image1 {
   background: url("../images/ImageBackground1.png") no-repeat;
   position: relative;
 }
@@ -361,7 +371,25 @@
   left: 0;
 }
 
-.loveimage2 {
+.love_image1, .love_image2, .love_text_block, .tree_block, .nature_image, .water_block {
+  height: 380px;
+  width: 380px;
+}
+
+.center_love, .center_love2, .center_nature {
+  width: inherit;
+  height: inherit;
+}
+
+.love_text, .tree_text_block, .water_text_block {
+  width: inherit;
+}
+
+.center_love img, .center_love2 img, .center_nature img {
+  margin-top: 148px;
+}
+
+.love_image2 {
   background: url("../images/Layer49.png") no-repeat;
   position: relative;
 }
@@ -370,20 +398,20 @@
   background: url("../images/9127271170_42c133847e_z.png") no-repeat;
 }
 
-.treetext, .watertext {
+.tree_text, .water_text {
   margin-top: 49px;
   text-align: center;
   color: #108bb8;
-  font-family: Opensansbold;
+  font-family: Opensansbold, sans-serif;
   font-size: 11px;
 }
-.treetext_1, .treetext_4, .watertext_1, .watertext_4 {
-  font-family: Opensansbold;
+.tree_text_1, .tree_text_4, .water_text_1, .water_text_4 {
+  font-family: Opensansbold, sans-serif;
   font-size: 16px;
   margin-top: 40px;
   text-align: center;
 }
-.treetext_1_line, .watertext_1_line {
+.tree_text_1_line, .water_text_1_line {
   text-decoration: line-through;
 }
 .block_4 {
@@ -414,7 +442,7 @@
 }
 .wanna_go_1 {
   padding-top: 25px;
-  font-family: Opensansbold;
+  font-family: Opensansbold, sans-serif;
   font-size: 20px;
 }
 @media (max-width: 600px) {
@@ -434,11 +462,6 @@
   }
 }
 
-@media (min-width: 450px) and (max-width: 700px) {
-  .tree, .water {
-    top: -260px;
-  }
-}
 @media (min-width: 350px) and (max-width: 450px) {
   .tree, .water {
     top: -415px;
@@ -485,7 +508,7 @@
   background-color: #36aeea;
   border: 2px solid white;
   font-size: 16px;
-  font-family: Opensansbold;
+  font-family: Opensansbold, sans-serif;
 }
 @media (max-width: 600px) {
   .buttonblock4 {
@@ -495,7 +518,7 @@
 }
 
 .Locktext {
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   color: #36aeea;
   vertical-align: baseline;
 }
@@ -554,7 +577,7 @@
 }
 
 .howwe {
-  font-family: Opensansbold;
+  font-family: Opensansbold, sans-serif;
   font-size: 30px;
   padding-top: 20px;
 }
@@ -616,7 +639,7 @@
 }
 
 .hexa_lorem {
-  font-family: robotobl;
+  font-family: robotobl, serif;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 0;
@@ -625,7 +648,7 @@
 }
 
 .hexa_amet {
-  font-family: "Roboto Light";
+  font-family: "Roboto Light", serif;
   font-size: 16px;
   color: #bababa;
   margin-left: 21px;
@@ -685,7 +708,7 @@
 
 .block_6_travel {
   font-size: 32px;
-  font-family: OpenSansBold;
+  font-family: OpenSansBold, sans-serif;
   text-align: center;
   margin-top: 36px;
 }
@@ -823,7 +846,7 @@
 
 .block_7_gallery {
   font-size: 32px;
-  font-family: OpenSansBold;
+  font-family: OpenSansBold, sans-serif;
   text-align: center;
   margin-top: 30px;
 }
@@ -836,7 +859,7 @@
   margin-bottom: 30px;
 }
 
-.block7_photos, block7_photos2 {
+.block7_photos {
   margin-bottom: 30px;
 }
 
@@ -877,7 +900,7 @@
 
 .our_clientssay {
   font-size: 30px;
-  font-family: OpenSansBold;
+  font-family: OpenSansBold, sans-serif;
   text-align: center;
   margin-top: 30px;
 }
@@ -907,12 +930,12 @@
 
 .Pavliv1, .JohnS1 {
   color: #56c7ff;
-  font-family: OpenSansBold;
+  font-family: OpenSansBold, sans-serif;
 }
 
 .Pavliv2, .JohnS2 {
   color: #56c7ff;
-  font-family: Opensans;
+  font-family: Opensans, sans-serif;
 }
 
 .block_9 {
@@ -929,24 +952,23 @@
   border-radius: 2%;
 }
 
-.sendbutton {
+.send_button {
   font-size: 12px;
-  font-family: OpenSansBold;
+  font-family: OpenSansBold, sans-serif;
   padding: 20px;
   letter-spacing: 3px;
   background: rgba(86, 199, 255, 0.8);
   border: 1px solid #56c7ff;
-  width: -webkit-fill-available;
   justify-content: center;
 }
 @media (max-width: 992px) {
-  .sendbutton {
+  .send_button {
     margin-left: 0;
   }
 }
 
 .contacts {
-  font-family: OpenSansBold;
+  font-family: OpenSansBold, sans-serif;
   font-size: 30px;
   letter-spacing: 3px;
   color: #36aeea;
@@ -961,7 +983,7 @@
 }
 
 .signup {
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-size: 12px;
   text-align: center;
   margin-bottom: 3rem;
@@ -980,7 +1002,7 @@
 .block_9_form {
   color: #f5f4f4;
   height: 50px;
-  width: -webkit-fill-available;
+  width: 510px;
   margin: 0 auto;
 }
 .block_9_form::placeholder {
@@ -997,7 +1019,7 @@
 }
 
 .block-9_footer {
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-size: 18px;
   color: #5c8592;
   margin-top: 195px;
@@ -1005,7 +1027,7 @@
 
 .block-9_footer2 {
   margin-top: 190px;
-  font-family: robotobl;
+  font-family: robotobl, sans-serif;
   font-size: 27px;
   color: #7ecada;
   font-weight: bold;
@@ -1017,26 +1039,26 @@
 }
 
 .block6_l, .block6_l2, .block6_l3, .block6_l4, .block6_l5 {
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-size: 16px;
   color: white;
 }
 
 .carpathian, .Alps, .Pyrenees, .Rocky, .Kavkaz {
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-size: 26px;
   color: white;
 }
 
 .number3150, .number3150_2, .number3150_3, .number3150_4, .number3150_5 {
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-size: 18px;
   color: white;
   text-decoration: line-through;
 }
 
 .number793, .number1893, .number2593, .number2123, .number593 {
-  font-family: Opensans extrabold;
+  font-family: Opensans extrabold, sans-serif;
   font-size: 26px;
   color: white;
 }
@@ -1077,19 +1099,19 @@
   max-height: 20px;
   border: 2px solid #36aeea;
   color: #36aeea;
-  font-family: Opensansbold;
+  font-family: Opensansbold, sans-serif;
   margin-left: 106px;
 }
 
-.lovetext_3, .treetext_2, .treetext_5, .watertext_2, .watertext_5 {
-  font-family: OpenSans;
+.love_text_3, .tree_text_2, .tree_text_5, .water_text_2, .water_text_5 {
+  font-family: OpenSans, sans-serif;
   font-size: 14px;
   color: #bababa;
   text-align: center;
 }
 
-.lovetext_4, .treetext_3, .treetext_6, .watertext_3, .watertext_6 {
-  font-family: "Times New Roman";
+.love_text_4, .tree_text_3, .tree_text_6, .water_text_3, .water_text_6 {
+  font-family: "Times New Roman", serif;
   font-size: 14px;
   font-style: oblique;
   text-align: center;
